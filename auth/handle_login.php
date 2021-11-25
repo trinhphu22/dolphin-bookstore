@@ -23,7 +23,7 @@ if(!empty($_POST)) {
 		$sql = "insert into Tokens (user_id, token, created_at) values ('$userId', '$token', '$created_at')";
 		execute($sql);
 
-		header('Location: ../index.php');
+		header('Location: ../');
 		die();
 	} else if ($adminExist != null) {
 		$token = getSecurityMD5($userExist['email'].time());
@@ -36,7 +36,7 @@ if(!empty($_POST)) {
 		$sqlAdmin = "insert into Tokens (user_id, token, created_at) values ('$adminId', '$token', '$created_at')";
 		execute($sqlAdmin);
 
-		header('Location: ../admin/index.php');
+		header('Location: ../admin/');
 		die();
 	} else {
 		$msg = "Email or password is invalid, please check again!!!";

@@ -6,11 +6,11 @@ $sql = "select Product.*, Category.name as category_name from Product left join 
 $product = executeResult($sql, true);
 
 $category_id = $product['category_id'];
-$sql = "select Product.*, Category.name as category_name from Product left join Category on Product.category_id = Category.id where Product.category_id = $category_id order by Product.updated_at desc limit 0,12";
+$sql = "select Product.*, Category.name as category_name from Product left join Category on Product.category_id = Category.id where Product.category_id = $category_id and Product.deleted = '0' order by Product.updated_at desc limit 0,12";
 
 $lastestItems = executeResult($sql);
 
-$sql = "select Product.*, Category.name as category_name from Product left join Category on Product.category_id = Category.id order by Product.updated_at desc limit 0,12";
+$sql = "select Product.*, Category.name as category_name from Product left join Category on Product.category_id = Category.id where Product.deleted = '0' order by Product.updated_at desc limit 0,12";
 $bestSelling = executeResult($sql);
 ?>
 

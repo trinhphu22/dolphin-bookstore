@@ -63,7 +63,7 @@
         <div class="header">
             <div class="left">
                 <div class="list">
-                    <a href="index.php">Home</a>
+                    <a href=".">Home</a>
                     <a href="category.php?id=7">Category</a>
                     <a href="contact.php">Contact</a>
                     <a href="">About</a>
