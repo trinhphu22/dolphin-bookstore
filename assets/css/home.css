@@ -758,10 +758,6 @@ span.info__price {
   flex-direction: column;
 }
 
-.cart-page .element .discount {
-  width: 15%;
-}
-
 .cart-page .element .subtotal {
   width: 10%;
 }

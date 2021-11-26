@@ -35,7 +35,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/spanopper.js/1.16.0/umd/spanopper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -66,7 +66,7 @@
                     <a href=".">Home</a>
                     <a href="category.php?id=7">Category</a>
                     <a href="contact.php">Contact</a>
-                    <a href="">About</a>
+                    <a href="about.php">About</a>
                 </div>
             </div>
             <div class="center">

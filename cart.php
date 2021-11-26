@@ -49,7 +49,9 @@ $bestSelling = executeResult($sql);
                     <div class="element">
                         <span class="item">Item</span>
                         <span class="quantity">Quantity</span>
+                    <div class="price-box">
                         <span class="discount">Price</span>
+                    </div>
                         <span class="subtotal">Sub-total</span>
                     </div>
                 </div>
