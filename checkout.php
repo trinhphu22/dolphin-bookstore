@@ -4,7 +4,7 @@ require_once('layouts/header.php');
 $user = getUserToken();
 $userId = $user['id'];
 if($user == null) {
-    header("Location: ".$baseUrl."auth/login.php");
+    header("Location: auth/login.php");
     die();
 }
 

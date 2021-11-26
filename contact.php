@@ -3,10 +3,14 @@ require_once('layouts/header.php');
 // var_dump($_POST);
 
 $user = getUserToken();
-$userId = $user['id'];
 
-$sql = "select * from User where id = $userId";
-$currentUser = executeResult($sql, true);
+if ($user) {
+    $userId = $user['id'];
+    
+    $sql = "select * from User where id = $userId";
+    $currentUser = executeResult($sql, true);
+}
+
 
 if(!empty($_POST)) {
 	$fullname = getPost('fullname');
